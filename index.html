@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
     <link rel="stylesheet" href="./style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -26,12 +28,12 @@
             </label>
             <!-- links  -->
             <div class="navbar-links">
-                <a href="" class="nav-link-items">Home</a>
-                <a href="" class="nav-link-items">Booking</a>
-                <a href="" class="nav-link-items">Destination</a>
-                <a href="" class="nav-link-items">Testmonials</a>
-                <a href="" class="nav-link-items">Category</a>
-                <a href="" class="nav-link-items">SignUp</a>
+                <a href="#home" class="nav-link-items">Home</a>
+                <a href="#bookings" class="nav-link-items">Booking</a>
+                <a href="#destinations" class="nav-link-items">Destination</a>
+                <a href="#testimonial" class="nav-link-items">Testmonials</a>
+                <a href="#category" class="nav-link-items">Category</a>
+                <a href="#container" class="nav-link-items">SignUp</a>
 
             </div>
         </nav>
@@ -61,65 +63,68 @@
             </div>
             <div id="category-contents">
                 <div class="category-content-card">
-                    <img class="category-content-card-img" src="./images/Group 1.png" alt="aeroplane">
+                    <img class="category-content-card-img" src="./images/Group 1.png" alt="network">
                     <h3 class="category-content-card-h3">Calculated Weather</h3>
                     <p class="category-content-card-p">Built Wicket longer admire do barton vanity itself do in it.
                     </p>
                 </div>
                 <div class="category-content-card">
-                    <img class="category-content-card-img" src="./images/Group 1.png" alt="aeroplane">
-                    <h3 class="category-content-card-h3">Calculated Weather</h3>
-                    <p class="category-content-card-p">Built Wicket longer admire do barton vanity itself do in it.
+                    <img width="100px" class="category-content-card-img" src="./images/group2-1.png" alt="aeroplane">
+                    <h3 class="category-content-card-h3">Best Flights</h3>
+                    <p class="category-content-card-p">Engrossed listening. Park gate sell they west hard for the.
                     </p>
                 </div>
                 <div class="category-content-card">
-                    <img class="category-content-card-img" src="./images/Group 1.png" alt="aeroplane">
-                    <h3 class="category-content-card-h3">Calculated Weather</h3>
-                    <p class="category-content-card-p">Built Wicket longer admire do barton vanity itself do in it.
+                    <img class="category-content-card-img" src="./images/Group 3.png" alt="mic">
+                    <h3 class="category-content-card-h3">Local Events</h3>
+                    <p class="category-content-card-p">Barton vanity itself do in it. Preferd to men it engrossed
+                        listening.
                     </p>
                 </div>
                 <div class="category-content-card">
-                    <img class="category-content-card-img" src="./images/Group 1.png" alt="aeroplane">
-                    <h3 class="category-content-card-h3">Calculated Weather</h3>
-                    <p class="category-content-card-p">Built Wicket longer admire do barton vanity itself do in it.
+                    <img class="category-content-card-img" src="./images/Group 4.png" alt="settings">
+                    <h3 class="category-content-card-h3">Customization</h3>
+                    <p class="category-content-card-p">We deliver outsourced aviation services for military customers
                     </p>
                 </div>
             </div>
         </section>
         <!-- destination -->
-        <section class="destination">
+        <section class="destination" id="destinations">
             <h4 class="destination-h4">Top Selling</h4>
             <h1 class="destination-h1">Top Destinations</h1>
             <div class="destination-content">
                 <div class="destination-content-img">
-                    <img src="./images/617ffa60cd811e0203d5a3a0_1635777119558-image7-p-1080.jpg" alt=""
-                        class="destination-content-img-img1">
+                    <img src="./images/romeee.jpg" alt="rome" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
-                        <li class="destination-content-img-list-items"><a class="link" href="">Rome,Italy</a></li>
+                        <li class="destination-content-img-list-items "><a class="link place" href="">Rome,Italy</a>
+                        </li>
                         <li class="destination-content-img-list-items"><a class="link" href="">$5200</a></li>
                     </ul>
                     <a class="destination-content-img-footer link " href="">10 days trip</a>
                 </div>
                 <div class="destination-content-img">
-                    <img src="./images/europe.jpg" alt="" class="destination-content-img-img1">
+                    <img src="./images/londonn.jpg" alt="" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
-                        <li class="destination-content-img-list-items"><a class="link" href="">Europe,Italy</a></li>
+                        <li class="destination-content-img-list-items"><a class="link place" href="">London,UK</a></li>
                         <li class="destination-content-img-list-items"><a class="link" href="">$4200</a></li>
                     </ul>
                     <a class="destination-content-img-footer link " href="">12 days trip</a>
                 </div>
                 <div class="destination-content-img">
-                    <img src="./images/london.jpg" alt="" class="destination-content-img-img1">
+                    <img src="./images/japan.jpg" alt="" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
-                        <li class="destination-content-img-list-items"><a class="link" href="">London,UK</a></li>
+                        <li class="destination-content-img-list-items "><a class="link place" href="">Tokyo,Japan</a>
+                        </li>
                         <li class="destination-content-img-list-items"><a class="link" href="">$6200</a></li>
                     </ul>
                     <a class="destination-content-img-footer link " href="">8 days trip</a>
                 </div>
                 <div class="destination-content-img">
-                    <img src="./images/switzerland.jpg" alt="" class="destination-content-img-img1">
+                    <img src="./images/swit.jpg" alt="" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
-                        <li class="destination-content-img-list-items"><a class="link" href="">Switzerland,UK</a></li>
+                        <li class="destination-content-img-list-items "><a class="link place"
+                                href="">Switzerland,Europe</a></li>
                         <li class="destination-content-img-list-items"><a class="link" href="">$6200</a></li>
                     </ul>
                     <a class="destination-content-img-footer link " href="">8 days trip</a>
@@ -127,7 +132,7 @@
             </div>
         </section>
         <!-- booking -->
-        <section class="booking">
+        <section class="booking" id="bookings">
             <div class="booking-content">
                 <h4 class="booking-content-h4">Easy and Fast</h4>
                 <h1 class="booking-content-h1">Book your Next Trip
@@ -138,24 +143,24 @@
                         <img src="./images/destination1.png" alt="destination" class="box-1-img">
                         <div class="box1-content">
                             <h4 class="box1-h4">Choose Destination</h4>
-                            <p class="box-1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
-                                tempus.</p>
+                            <p class="box-1-p">Choose your favourite place. No matter
+                                where you travel inside the World.</p>
                         </div>
                     </div>
                     <div class="booking-content-div-box1">
                         <img src="./images/payment.jpg" alt="destination" class="box-1-img">
                         <div class="box1-content">
-                            <h4 class="box1-h4">Choose Destination</h4>
-                            <p class="box-1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
-                                tempus.</p>
+                            <h4 class="box1-h4">Make Payment</h4>
+                            <p class="box-1-p">After find your perfect spot, make your
+                                payment and get ready to travel.</p>
                         </div>
                     </div>
                     <div class="booking-content-div-box1">
                         <img src="./images/car1.jpg" alt="destination" class="box-1-img">
                         <div class="box1-content">
-                            <h4 class="box1-h4">Choose Destination</h4>
-                            <p class="box-1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
-                                tempus.</p>
+                            <h4 class="box1-h4">Reach Airport on Selected Date</h4>
+                            <p class="box-1-p">Lastly, you have to arrive at the airport
+                                on time and enjoy the vacation.</p>
                         </div>
                     </div>
                 </div>
@@ -167,7 +172,7 @@
             </div>
         </section>
         <!-- testimonials -->/
-        <section class="testimonials">
+        <section class="testimonials" id="testimonial">
             <div class="testimonial-header">
                 <h4 class="testimonial-header-h4">Testimonials</h4>
                 <h1 class="testimonial-header-h1">What people say about Us.</h1>
@@ -175,37 +180,124 @@
             <div class="testimonial-content">
                 <div class="testimonial-statements">
                     <div class="testimonial-block">
-                        <img src="./images/test-img.png" alt="image-people" >
+                        <img src="./images/test-img.png" alt="image-people">
                     </div>
                     <div class="testimonial-statements-block">
-                        <p class="statement-p">"On the Windows talking painted pasture yet its express parties use. Sure
-                            last upon he same as knew next. Of believed or diverted no."
+                        <p class="statement-p">"Jadoo is recognized as one of the finest travel agency in the world.
+                            When it came to planning a trip, I found them to be dependable."
                         </p>
                         <h2 class="statement-author">Thomas Wagon</h2>
                         <p class="statement-author-desigination">
                             CEO of Red Button
                         </p>
-    
+
                     </div>
-                </div>  
+                </div>
                 <div class="testimonial-statements">
                     <div class="testimonial-block">
-                        <img src="./images/test-img.png" alt="image-people" >
+                        <img width="73px" src="./images/test2.jpg" alt="image-people">
                     </div>
                     <div class="testimonial-statements-block">
                         <p class="statement-p">"On the Windows talking painted pasture yet its express parties use. Sure
                             last upon he same as knew next. Of believed or diverted no."
                         </p>
-                        <h2 class="statement-author">Thomas Wagon</h2>
+                        <h2 class="statement-author">Kelly Willium</h2>
                         <p class="statement-author-desigination">
-                            CEO of Red Button
+                            Khulna, Bangladesh
                         </p>
-    
+
                     </div>
-                </div>  
+                </div>
             </div>
         </section>
 
+        <!-- sponsers -->
+        <section class="sponsers">
+            <div class="sponser1">
+                <img src="./images/s1.png" alt="sponser">
+            </div>
+            <div class="sponser1">
+                <img src="./images/s2.png" alt="sponser">
+            </div>
+            <div class="sponser1">
+                <img src="./images/s3.png" alt="sponser">
+            </div>
+            <div class="sponser1">
+                <img src="./images/s4.png" alt="sponser">
+            </div>
+            <!-- <div class="sponser1 img-5">
+            <img src="./images/s5.png" alt="sponser">
+           </div> -->
+        </section>
+
+        <!-- subscription -->
+        <section class="subscription">
+            <div class="subscription-box">
+                <h2 class="subscription-box-h2">Subscribe to get information, latest news and other interesting offers
+                </h2>
+                <div class="email-box">
+                    <input type="email" placeholder="email" id="email">
+                    <button type="submit" id="button">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <!-- footer----------------------------------------------- -->
+        <footer class="footer">
+            <div class="footer-content">
+
+                <div class="jadoo-icons">
+                    <div class="jadoo-icons-media">
+                        <div class="icons-socialmedia twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icons-socialmedia facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icons-socialmedia instagram">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </div>
+                    </div>
+                    <h4 class="icons-span">Discover our App</h4>
+                    <div class="icons-app-icons">
+                        <img src="./images/Play Store.png" alt="playstore" class="icons-app-playstore">
+                        <img src="./images/Play Store.png" alt="googleplay" class="icons-app-playstore">
+                    </div>
+                </div>
+
+                <div class="jadoo">
+                    <h1 class="about-jadoo">jadoo</h1>
+                    <p class="about-jadoo-para">Book your trip in minute, get full Control for much longer.</p>
+                </div>
+                <div class="jadoo company">
+                    <h4 class="jadoo-h4">Company</h4>
+                    <ul class="jadoo-links">
+                        <li class="jadoo-link-items"><a href="" class="footer-a">About</a></li>
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Careers</a></li>
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="jadoo contact">
+                    <h4 class="jadoo-h4">Contact</h4>
+                    <ul class="jadoo-links">
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Help</a></li>
+                        <li class="jadooo-link-items"><a href="" class="footer-a">Press</a></li>
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="jadoo more">
+                    <h4 class="jadoo-h4">More</h4>
+                    <ul class="jadoo-links">
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Offers</a></li>
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Airlines</a></li>
+                        <li class="jadoo-link-items"><a href="" class="footer-a">Low fare tips</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copy-write">
+                <a href="" class="copy-write-content">All rights reserved &copy;jadoo.co</a>
+            </div>
+        </footer>
     </div>
 </body>
 

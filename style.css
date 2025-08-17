@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 * {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,11 +16,13 @@
   background-image: url('./images/Decore.png');
   background-position: center;
   background-size: cover;
+  position: relative;
+
 }
 
-/* navbar */
+/* navbar -------------------------------------------------------------------*/
 .logo {
-  width: 8%;
+  width: 70px;
 }
 
 .nav-bar {
@@ -24,17 +30,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.3rem 10%;
+  backdrop-filter: blur(50px);
+  position: fixed;
+  width: 100%;
 }
 
-.navbar-links>a {
+.nav-link-items {
   margin-left: 2.5rem;
   color: #181e48;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .navbar-links>a:hover {
-  color: #5e6282;
+  color: rgb(238, 179, 101);
 }
 
 #check {
@@ -45,20 +54,21 @@
   display: none;
 }
 
-/* home */
+/* home------------------------------------------------- */
 #home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   align-items: start;
-  height: 100vh;
+  /* height: 100vh; */
+  padding-top: 5rem;
 
 }
 
 #girl {
-  width: 100%;
+  width: 90%;
 
-  padding: 10% 12% 0px 0px;
+  padding: 2rem 12% 0px 0px;
 
 }
 
@@ -69,29 +79,31 @@
 
 #home-content-caption {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: 4%;
   color: #d46951
 }
 
 #home-content-headind1 {
-  font-size: 4.5rem;
-  font-weight: 900;
+  font-size: 4rem;
+  font-weight: 800;
   padding-bottom: 5%;
   color: #181e48;
 }
 
 #home-content-description {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   padding-bottom: 5%;
   color: #5e6282;
+
 }
 
 .home-button {
   padding: 5%;
   border-radius: 1rem;
   background-color: orange;
+  box-shadow: 5px 5px 5px rgb(208, 179, 124);
   border: none;
 }
 
@@ -106,7 +118,7 @@
   margin-left: 5%;
 }
 
-/* category */
+/* category ........................................................*/
 #category {
   margin: 10% 0px;
   width: 100%;
@@ -116,6 +128,7 @@
 
 #category-h4 {
   text-align: center;
+  color: #e77802;
 
 }
 
@@ -131,7 +144,40 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1%;
-  margin: 2%
+  margin: 2%;
+  padding: 2%;
+
+}
+
+.category-content-card {
+  width: 220px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: -2px 9px 25px -3px rgba(0, 0, 0, 0.1);
+  transition: all 2s;
+}
+
+.category-content-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-content-card-h3 {
+  color: #181e48;
+}
+
+.category-content-card-p {
+  font-size: .9rem;
+  color: #5e6282;
+}
+
+.category-content-card-img {
+  padding-bottom: 1rem;
 }
 
 /* destination */
@@ -143,8 +189,9 @@
 .destination-h4 {
   /* background-color: beige; */
   text-align: center;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   padding: 1rem 0px;
+  color: #e77802;
 }
 
 .destination-h1 {
@@ -164,12 +211,17 @@
 }
 
 .destination-content-img {
-  background-color: coral;
+  box-shadow: 5px 5px 5px gainsboro;
   width: 300px;
-  border-radius: 5px;
   height: 400px;
   margin: 1rem;
 
+
+}
+
+.destination-content-img:hover {
+  transform: translateY(-15px);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -195,10 +247,14 @@
 
 }
 
+.place:hover {
+  color: #e77802;
+}
+
 /* booking */
 .booking {
   margin-top: 8rem;
-  background-color: rgb(109, 136, 159);
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -206,7 +262,7 @@
 }
 
 .booking-content {
-  background-color: rgb(33, 79, 119);
+
   /* margin-top: 5rem; */
   padding-left: 7rem;
 
@@ -215,11 +271,13 @@
 .booking-content-h4 {
   font-size: 1.2rem;
   padding-bottom: 2rem;
+  color: #e77802;
 }
 
 .booking-content-h1 {
   font-size: 3rem;
   padding-bottom: 2rem;
+  color: #181e48;
 
 }
 
@@ -232,6 +290,9 @@
 
 .box-1-img {
   width: 10%;
+  border-radius: 10px;
+
+
 }
 
 .box1-content {
@@ -242,18 +303,26 @@
   font-weight: 600;
   font-size: 1.2rem;
   text-align: start;
+  color:#5e6282;
 }
 
 .box-1-p {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
   text-align: justify;
+  color:#5e6282;
 }
 
 .booking-img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+}
+
+.insta-post {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* testimonials */
@@ -265,7 +334,8 @@
 }
 
 .testimonial-header {
-  background-color: aquamarine;
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,17 +343,19 @@
 }
 
 .testimonial-header-h4 {
-  font-size: 2rem;
+
   padding: 1rem;
+  color: #e77802;
 }
 
 .testimonial-header-h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 1rem;
+  color: #181e48;
 }
 
 .testimonial-content {
-  background-color: aqua;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,37 +364,243 @@
 }
 
 .testimonial-statements-block {
-  background-color: #d46951;
+
   padding: 1rem;
   margin: 0px 1rem;
-  border-radius: 2rem;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .testimonial-statements {
-  background-color: chartreuse;
+
   margin-top: 2rem;
+  color: #5e6282;
 }
 
 .statement-author {
-  padding-top: 1.4rem;
+  padding-top: 1rem;
+  color: #5e6282;
+  font-size: 1rem;
 }
 
 .statement-author-desigination {
   padding-top: .8rem;
+  font-size: .8rem;
+  color: #5e6282;
 }
 
-/* responsive */
+.sponsers {
+
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sponser1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+.sponser1:hover {
+  box-shadow: 1px 1px 1px gainsboro;
+}
+
+.subscription {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.subscription-box {
+
+  background-image: url('./images/images.jpg');
+  padding: 5rem;
+  background-attachment: fixed;
+
+
+
+}
+
+.subscription-box-h2 {
+  font-size: 2.5rem;
+  color: #181e48;
+  text-align: center;
+  text-shadow: 20px 20px 20px rgba(0, 0, 0);
+
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#email {
+  width: 50%;
+  padding: 1rem 0px;
+  margin-right: 1rem;
+  border: white;
+  border-radius: .5rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#button {
+  padding: 1rem 2rem;
+  background-color: #e77802;
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+}
+
+/* footer --------------------------------------------------------*/
+.footer {
+  padding: 5rem 2rem;
+
+
+}
+
+.footer-content {
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.jadoo-icons {
+
+  padding: 30px;
+}
+
+.jadoo-icons-media {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+
+}
+
+.icons-socialmedia {
+  padding: .5rem;
+  margin: 0px .7rem;
+}
+
+.icons-socialmedia:hover {
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(71, 66, 66);
+}
+
+.twitter:hover {
+
+  background-color: #1da1f2;
+  /*twitterblue */
+}
+
+.facebook:hover {
+  background-color: #3B5998;
+  /*facebook-blue*/
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  /* instagramcss*/
+}
+
+.icons-span {
+  text-align: center;
+  padding: 7px;
+}
+
+.icons-app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+}
+
+.icons-app-playstore {
+  margin-right: 1rem;
+}
+.copy-write{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-write-content {
+  padding:3rem 2rem 0px 2rem;
+  color:#5e6282;
+}
+
+.about-jadoo,
+.jadoo-h4,
+.footer-a {
+  text-align: start;
+  padding: 10px;
+  color: #181e48;
+}
+
+.about-jadoo-para {
+  padding: 15px;
+  color: #5e6282;
+}
+
+.jadoo-links {
+  list-style: none;
+}
+
+.footer-a {
+  color: #5e6282;
+  line-height: 1.4;
+}
+
+.footer-a:hover {
+  color: #e77802;
+}
+
+.more {
+  text-align: start;
+}
+
+/* --------------responsive-------------------------------------------- */
 @media (max-width:1024px) {
   .nav-bar {
-    padding: 1.3rem 1%;
+    padding: 1.3rem 2rem;
+  }
+
+  #home {
+    padding-top: 5rem;
+  }
+
+  #girl {
+    width: 100%;
+  }
+
+  #home-content-headind1 {
+    font-size: 2.5rem;
   }
 
   #category-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8%;
-    padding: 7rem;
-    background-color: #d46951;
+    gap: 15%;
+    padding: 10rem;
+
   }
 
   .destination-content {
@@ -330,7 +608,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2%;
     padding: 6rem;
-    background-color: #5e6282;
+
   }
 
   .booking {
@@ -338,23 +616,59 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-   .testimonials {
+
+  .testimonials {
     margin-top: 7rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    padding:3rem;
+    padding: 3rem;
   }
-   .testimonial-header {
-    
+
+  .testimonial-header {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  /* sponsers */
+  .sponsers {
+    padding: 1.5rem;
+  }
+
+  /* subscription */
+  .subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .subscription-box-h2 {
+    text-align: center;
+  }
+
+  /* footer */
+  .footer {
+    
+    padding: 2rem 7rem;
+    
+  }
+
+  .footer-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .jadoo {
+    padding: 2rem 5rem;
+  }
 }
 
 /* tablet */
@@ -373,22 +687,29 @@
 
   #close {
     display: none;
+    font-size: 2rem;
 
   }
 
+  #menu {
+    font-size: 2rem;
+    background-color: rgb(128, 126, 126);
+  }
+
   #check:checked~.icons #close {
-    background-color: #e77802;
+    background-color: rgb(128, 126, 126);
     padding: 5%;
     display: block;
   }
 
   .navbar-links {
     position: absolute;
-    top: 7%;
-    background-color: #e77802;
+    top: 5rem;
+    background-color:#f09433;
+    backdrop-filter: blur(50px);
     width: 100%;
     left: 0;
-    display: none;
+    display: none
   }
 
   .navbar-links>a {
@@ -396,22 +717,48 @@
     text-align: center;
     font-size: 1.1rem;
     margin: 1.5rem 0px;
+
   }
 
   #check:checked~.navbar-links {
     display: block;
   }
 
+  /* home */
   #home {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+
 
   }
 
+  #home-content-caption {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #home-content-headind1 {
+    text-align: center;
+    font-size: 4rem;
+
+
+  }
+
+  #home-content-description {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .home-button {
+    margin-left: 8rem;
+  }
+
   #girl {
-    width: 90%;
+    width: 100%;
+
   }
 
   #category {
@@ -439,7 +786,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1%;
     padding-left: 3rem;
-    background-color: #5e6282;
+
   }
 
   .booking {
@@ -458,29 +805,89 @@
     width: 100%;
 
   }
+
   .testimonials {
     margin-top: 7rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
-    padding:1rem;
+    padding: 1rem;
+  }
+
+  .sponsers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* subscription */
+  .subscription-box-h2 {
+    text-align: center;
+  }
+
+  .email-box {
+    padding: 2rem;
+  }
+
+  #email {
+    margin: 0px;
+    padding: 1.5rem 10rem;
+    font-size: 1rem;
+  }
+
+  #button {
+    margin-left: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .jadoo {
+    padding: 2rem 5rem;
+  }
+
+  .more {
+
+    padding-left: 7.5rem;
   }
 }
 
 
-/* mobile */
+/* mobile---------------------------------------------------------------------- */
 @media (max-width:500px) {
 
-  #home {
+  /* navbar */
+  .navbar-links {
+    position: absolute;
+    top: 4rem;
 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  /* home */
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
   }
 
   .home-content {
     text-align: center;
+
+  }
+
+  #home-content-caption {
+    font-size: .8rem;
 
   }
 
@@ -495,6 +902,10 @@
     padding-bottom: 2rem;
   }
 
+  .home-button {
+    margin: 0px;
+  }
+
   #container {
     background-size: cover;
     background-repeat: no-repeat;
@@ -503,10 +914,11 @@
   }
 
   #girl {
-    width: 90%;
+    width: 100%;
     transition: bottom 4s;
   }
 
+  /* category */
   #category {
     padding: 10%;
     margin-top: 15%;
@@ -514,14 +926,18 @@
   }
 
   #category-contents {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 1rem;
+
 
   }
 
   .category-content-card {
-    padding: 10% 0px;
+    margin-top: 6rem;
   }
 
   /* destination */
@@ -539,8 +955,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    padding: 0px;
   }
 
   .booking {
@@ -555,8 +970,13 @@
     padding-left: 5%;
   }
 
+  .booking-content-h4 {
+    text-align: center;
+  }
+
   .booking-content-h1 {
     font-size: 1.5rem;
+    text-align: center;
 
   }
 
@@ -581,7 +1001,7 @@
   }
 
   .testimonial-header {
-    background-color: aquamarine;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -597,7 +1017,78 @@
     font-size: 1.5rem;
     padding: 1rem;
   }
-  .testimonial-content{
-    padding:4rem;
+
+  .testimonial-content {
+    padding: 4rem;
+  }
+
+  /* sponsers */
+  .sponsers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* subscription */
+  .subscription {
+    padding: .5rem;
+  }
+
+  .subscription-box {
+    padding: .1rem;
+
+  }
+
+  .subscription-box-h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .email-box {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+  }
+
+  #email {
+    padding: 1rem 10rem;
+    margin: 0px 0px 1rem 0px;
+  }
+
+  #button {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+
+  /* footer */
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .jadoo {
+    padding: 1rem;
+  }
+
+  .about-jadoo,
+  .jadoo-h4 {
+    text-align: center;
+  }
+
+  .about-jadoo-para {
+    text-align: justify;
+  }
+
+  .jadoo-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy-write-content{
+    font-size: .32rem;
+    font-weight: 900;
+    /* background-color: #1da1f2; */
+    
+    
   }
 }
