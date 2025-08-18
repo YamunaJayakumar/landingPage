@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.3rem 10%;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(40px);
   position: fixed;
   width: 100%;
 }
@@ -159,11 +159,12 @@
   border-radius: 1rem;
   text-align: center;
   box-shadow: -2px 9px 25px -3px rgba(0, 0, 0, 0.1);
-  transition: all 2s;
+  transition: all .3s;
 }
 
 .category-content-card:hover {
   transform: translateY(-15px);
+  background-color: rgba(245, 220, 188, 0.5);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -184,6 +185,7 @@
 .destination {
   /* background-color: aqua; */
   width: 100%;
+  padding-top: 8rem;
 }
 
 .destination-h4 {
@@ -330,6 +332,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
+  padding-top:8rem;
 
 }
 
@@ -430,9 +433,9 @@
 
 .subscription-box-h2 {
   font-size: 2.5rem;
-  color: #181e48;
+  color:#181e48;
   text-align: center;
-  text-shadow: 20px 20px 20px rgba(0, 0, 0);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0,.2);
 
 }
 
@@ -1014,12 +1017,12 @@
   }
 
   .testimonial-header-h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
   }
 
   .testimonial-content {
-    padding: 4rem;
+    padding: 2rem;
   }
 
   /* sponsers */

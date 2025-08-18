@@ -31,7 +31,7 @@
                 <a href="#home" class="nav-link-items">Home</a>
                 <a href="#bookings" class="nav-link-items">Booking</a>
                 <a href="#destinations" class="nav-link-items">Destination</a>
-                <a href="#testimonial" class="nav-link-items">Testmonials</a>
+                <a href="#test" class="nav-link-items">Testmonials</a>
                 <a href="#category" class="nav-link-items">Category</a>
                 <a href="#container" class="nav-link-items">SignUp</a>
 
@@ -39,7 +39,7 @@
         </nav>
         <!-- home -->
         <section id="home">
-            <div class="home-content">
+            <div class="home-content " data-aos="fade-right">
                 <h4 id="home-content-caption">BEST DESTINATIONS AROUND THE WORLD</h4>
                 <h1 id="home-content-headind1">Travel,enjoy <br>
                     and live a new <br>
@@ -52,7 +52,7 @@
                 <button class="home-button" id="home-content-video-button"><a href="">play demo</a></button>
             </div>
             <div class="home-img">
-                <img id="girl" src="./images/Image.png" alt="">
+                <img id="girl" src="./images/Image.png" alt=""  data-aos="fade-left">
             </div>
         </section>
         <!-- category -->
@@ -90,11 +90,12 @@
             </div>
         </section>
         <!-- destination -->
-        <section class="destination" id="destinations">
+        <section class="destination" id="destinations" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <h4 class="destination-h4">Top Selling</h4>
             <h1 class="destination-h1">Top Destinations</h1>
             <div class="destination-content">
-                <div class="destination-content-img">
+                <div class="destination-content-img" >
                     <img src="./images/romeee.jpg" alt="rome" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
                         <li class="destination-content-img-list-items "><a class="link place" href="">Rome,Italy</a>
@@ -103,7 +104,7 @@
                     </ul>
                     <a class="destination-content-img-footer link " href="">10 days trip</a>
                 </div>
-                <div class="destination-content-img">
+                <div class="destination-content-img" >
                     <img src="./images/londonn.jpg" alt="" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
                         <li class="destination-content-img-list-items"><a class="link place" href="">London,UK</a></li>
@@ -111,7 +112,7 @@
                     </ul>
                     <a class="destination-content-img-footer link " href="">12 days trip</a>
                 </div>
-                <div class="destination-content-img">
+                <div class="destination-content-img" >
                     <img src="./images/japan.jpg" alt="" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
                         <li class="destination-content-img-list-items "><a class="link place" href="">Tokyo,Japan</a>
@@ -120,7 +121,7 @@
                     </ul>
                     <a class="destination-content-img-footer link " href="">8 days trip</a>
                 </div>
-                <div class="destination-content-img">
+                <div class="destination-content-img" >
                     <img src="./images/swit.jpg" alt="" class="destination-content-img-img1">
                     <ul class="destination-content-img-list">
                         <li class="destination-content-img-list-items "><a class="link place"
@@ -172,7 +173,7 @@
             </div>
         </section>
         <!-- testimonials -->/
-        <section class="testimonials" id="testimonial">
+        <section class="testimonials" id="test">
             <div class="testimonial-header">
                 <h4 class="testimonial-header-h4">Testimonials</h4>
                 <h1 class="testimonial-header-h1">What people say about Us.</h1>
@@ -300,5 +301,9 @@
         </footer>
     </div>
 </body>
+
+<script>
+  AOS.init();
+</script>
 
 </html>
