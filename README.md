@@ -9,4 +9,4 @@ A simple landing page built with **HTML** and **CSS**, inspired by the jadoo web
 - HTML  
 - CSS
  ##
-[Live Demo](https://yamunajayakumar.github.io/landingPage/))
+[Live Demo](https://yamunajayakumar.github.io/landingPage/)
