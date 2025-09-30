@@ -1,4 +1,4 @@
-# A Travel Website 
+#  Travel Website 
 A simple landing page built with **HTML** and **CSS**, inspired by the jadoo website.
 ##  Features
 - Clean, semantic HTML  
